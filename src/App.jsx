@@ -3,6 +3,21 @@ import Reveal from "reveal.js";
 import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/black.css";
 import "./App.css";
+// Images
+import simulateWind from "./assets/images/simulate-wind-recongnize-buildings.jpg"
+import externalAerodynamics from "./assets/images/external-aerodynamics-building.jpg"
+import moveToZoomSignal from "./assets/images/move-to-zoom-signal.jpg"
+import makingMusic from "./assets/images/making-music-dynamicland.jpg"
+import aframeLogo from "./assets/images/aframe-logo.png";
+import webxrThreejs from "./assets/images/webxr-threejs.jpg";
+import xr3dObject from "./assets/images/xr-3d-object.jpg"
+import arScience from "./assets/images/ar-science.jpg";
+import communalScienceLab from "./assets/images/communal-science-lab.png";
+import metaQuestPassthrough from "./assets/images/meta-quest-3-passthrough.png";
+import northstarPerson from "./assets/images/northstar-person.jpg"
+import northstarElectronics from "./assets/images/northstar-electronics.jpg"
+import realtalkPapers from "./assets/images/realtalkos-papers.jpg"
+import pharoImage from "./assets/images/pharo.png"
 
 function App() {
   const deckDivRef = useRef(null); // reference to deck container div
@@ -65,11 +80,11 @@ function App() {
           </div>
           <div className="w-full flex flex-row justify-between gap-x-4">
             <img
-              src="/images/simulate-wind-recongnize-buildings.jpg"
+              src={simulateWind}
               className="w-2/3"
             />
             <img
-              src="/images/external-aerodynamics-building.jpg"
+              src={externalAerodynamics}
               className="w-1/3"
             />
           </div>
@@ -80,7 +95,7 @@ function App() {
             Taking inspiration from Dynamicland
           </div>
           <div className="w-4/5 m-auto">
-            <img src="/images/move-to-zoom-signal.jpg" className="w-full" />
+            <img src={moveToZoomSignal} className="w-full" />
           </div>
         </section>
 
@@ -90,7 +105,7 @@ function App() {
           </div>
           <div className="w-4/5 m-auto">
             <img
-              src="/images/making-music-dynamicland.jpg"
+              src={makingMusic}
               className="w-full"
             />
           </div>
@@ -102,7 +117,7 @@ function App() {
           </div>
           <div className="font-bold text-3xl mb-10">...with a (XR) twist</div>
           <div className="w-2/3 m-auto">
-            <img src="/images/communal-science-lab.png" className="w-full" />
+            <img src={communalScienceLab} className="w-full" />
           </div>
         </section>
 
@@ -143,12 +158,12 @@ function App() {
           </div>
           <div className="w-1/2 m-auto p-10 -mt-10">
             <div className="w-full flex flex-row justify-between gap-x-4 gap-y-2 -mb-6">
-              <img src="/images/aframe-logo.png" className="w-1/3" />
-              <img src="/images/webxr-threejs.jpg" className="w-2/3" />
+              <img src={aframeLogo} className="w-1/3" />
+              <img src={webxrThreejs} className="w-2/3" />
             </div>
             <div className="w-full flex flex-row justify-between gap-x-4">
-              <img src="/images/ar-science.jpg" className="w-2/3" />
-              <img src="/images/xr-3d-object.jpg" className="w-1/3" />
+              <img src={arScience} className="w-2/3" />
+              <img src={xr3dObject} className="w-1/3" />
             </div>
           </div>
         </section>
@@ -166,7 +181,7 @@ function App() {
           </div>
           <div className="w-2/3 m-auto">
             <img
-              src="/images/meta-quest-3-passthrough.png"
+              src={metaQuestPassthrough}
               className="w-full"
             />
           </div>
@@ -186,7 +201,7 @@ function App() {
             </blockquote>
           </div>
           <div className="w-2/3 m-auto">
-            <img src="/images/northstar-person.jpg" className="w-full" />
+            <img src={northstarPerson} className="w-full" />
           </div>
         </section>
 
@@ -219,7 +234,7 @@ function App() {
             Great community project to build the headsets together
           </div>
           <div className="w-2/3 m-auto">
-            <img src="/images/northstar-electronics.jpg" className="w-full" />
+            <img src={northstarElectronics} className="w-full" />
           </div>
         </section>
 
@@ -233,7 +248,7 @@ function App() {
             programming
           </div>
           <div className="w-2/3 m-auto">
-            <img src="/images/realtalkos-papers.jpg" className="px-10" />
+            <img src={realtalkPapers} className="px-10" />
           </div>
         </section>
 
@@ -264,7 +279,7 @@ function App() {
             (Pharo)
           </div>
           <div className="w-2/3 mx-auto">
-            <img src="/images/pharo.png" className="w-full" />
+            <img src={pharoImage} className="w-full" />
           </div>
         </section>
 
